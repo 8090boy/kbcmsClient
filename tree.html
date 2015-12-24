@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>数据添加</title>
+
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 2012 08:21:57 GMT"> 
+<meta http-equiv="expires" content="0"> 
+<link href="./css/public.css" rel="stylesheet" type="text/css">
+<link href="./css/add.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8" src="./js/testApi.js"></script>
+
+</head>
+<body>
+<a href="common.html">common</a><br/><a href="data.html">data</a><br/><a href="extend.html">extend</a><br/><a href="tree.html">tree</a>
+ <h2>Tree数据</h2>
+<form name="country">
+<input id="id" placeholder="请输入ID" value="50"  type="text" name="Id" class="text2" />
+</form>
+<a onClick="KBCMS.Tree.Del(document.querySelector('#id').value)">删除</a>
+<a onClick="KBCMS.Tree.ById(document.querySelector('#id').value)">ID查找一条</a>
+<a onClick="KBCMS.Tree.All(document.querySelector('#id').value,10)">所有</a>
+	<div  id="addui">
+			<h3><a onclick="KBCMS.Tree.ADD()">添加</a> </h3>
+			<ul >
+				<li><b class="c"> <input placeholder="Id"   name="Id"  type="number" class="text2"></b></li>
+				<li><b class="c"> <input placeholder="父级ID"  name="ParentId"   type="number" class="text2"></b></li>
+				<li><b class="c"> <input placeholder="英文名称"  name="Name"  type="text" class="text2"></b></li>				
+				<li><b class="c"> <textarea placeholder="参考内容"  name="RefInfo" value="{xx:'abc',dxxx:'123'}"    class="text3"></textarea></b></li>
+			</ul>
+			<h3></h3>
+	</div>
+	<div id="viewDatas"></div>
+
+</body></html>

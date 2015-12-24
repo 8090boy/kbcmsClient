@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>数据添加</title>
+
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 2012 08:21:57 GMT"> 
+<meta http-equiv="expires" content="0"> 
+<link href="./css/public.css" rel="stylesheet" type="text/css">
+<link href="./css/add.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/testApi.js"></script>
+
+</head>
+<body>
+<a href="common.html">common</a><br/><a href="data.html">data</a><br/><a href="extend.html">extend</a><br/><a href="tree.html">tree</a>
+ <h2>Extend数据</h2>
+<form name="country">
+<input id="id" placeholder="请输入ID" value="143"  type="text" name="Id" class="text2" />
+</form>
+<a onClick="KBCMS.Extend.Del(document.querySelector('#id').value)">删除</a>
+<a onClick="KBCMS.Extend.ById(document.querySelector('#id').value)">ID查找一条</a>
+<a onClick="KBCMS.Extend.All(document.querySelector('#id').value,10)">所有</a>
+	<form name="add"  id="addui">
+			<h3><a onclick="KBCMS.Extend.ADD()">添加</a> </h3>
+			<ul >
+				<li><b class="c"> <input placeholder="Id"   type="number" name="Id" class="text2"></b><b class="c"> <input placeholder="数据ID" value="0"  type="number" name="DataId" class="text2"></b><b class="c"> <input placeholder="目录ID" value="0" type="number" name="TreeId" class="text2"></b></li>
+<li>
+<b class="c">
+<label for="radio1"   class="label_check"><input type="radio" value="1" id="radio1" name="IsTop"  >置顶</label>
+<label for="radio2" class="label_check"><input type="radio" value="0" id="radio2" name="IsTop" checked="checked" >不置顶</label>
+</b>
+
+<b class="c">
+<label for="Recommend1"   class="label_check"><input type="radio" value="1" id="Recommend1" name="Recommend"  >推荐</label>
+<label for="Recommend2" class="label_check"><input type="radio" value="0" id="Recommend2" name="Recommend" checked="checked" >不推荐</label>
+</b>
+
+<b class="c">
+<label for="Visible1"   class="label_check"><input type="radio" value="1" id="Visible1" name="Visible" checked="checked" >启用</label>
+<label for="Visible2" class="label_check"><input type="radio" value="0" id="Visible2" name="Visible">不启用</label>
+</b>
+ </li>
+				<li><b class="c"> <input placeholder="访问量" value="1206"   type="number" name="Amount"  class="text2"></b><b class="c"> <input placeholder="排序"  value="2015-11-15 8:45:20"  type="text" name="Sort" id="Wdate1" class="Wdate" onclick="WdatePicker({ dateFmt:&#39;yyyy-MM-dd HH:mm:ss&#39; })"></b></li>
+				<li><b class="c"> <textarea placeholder="内容"   class="text3" name="content">{xx:'abc',dxxx:'123'}</textarea></b></li>
+			</ul>
+			<h3></h3>
+	</form>
+	<div id="viewDatas"></div>
+
+</body></html>

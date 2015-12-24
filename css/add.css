@@ -1,0 +1,21 @@
+
+*{ font-weight: lighter;  }
+ul { width: 800px; height:auto;  margin: 0px auto; padding-top: 20px; }
+ul li { display: block; height: auto;  margin-bottom:20px; text-align:left; }
+ul li.tip { color: red; background-color: #fffbbb; display: block; height: 40px; line-height: 40px; padding-left: 20px; }
+
+b.t { padding: 0px 10px 0px 10px ; width:100px; display: inline-block;    }
+
+b.cb1 { padding: 0px 20px 0px 20px ; color: green;  }
+b.cb1:hover { background-color: #fff999; }
+
+textarea.n  { height: 120px; width: 400px; resize:none; }
+a.suba { width: 120px; height: 40px;  line-height:40px; font-size:18px; text-align:center;   display: block; background-color:#dddddd; margin: 0px auto; }
+a.suba:hover {   background-color:green; color: white; text-decoration: none; }
+input { background-color: #fffddd; color: green; border: 1px solid #ccc;  font-size: 14px; height: 16px; line-height: 16px; }
+input.text100 { width: 800px;     height: 36px; text-indent: 10px; }
+input.Wdate { width: 260px;  height: 36px; text-indent: 10px;  background-color: #fffddd; }
+input.text2 { width: 260px;   height: 36px; text-indent: 10px; }
+.text3 { width: 800px; height: 80px; text-indent: 10px; resize:none; background-color: #fffddd;    color: green; border: 1px solid #ccc;  font-size: 14px;   line-height: 16px; }
+
+
